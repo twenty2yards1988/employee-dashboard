@@ -1,12 +1,10 @@
 function Sidebar() {
   return (
-    <aside>
-      <ul>
-        <li>Dashboard</li>
-        <li>Employees</li>
-        <li>Reports</li>
-      </ul>
-    </aside>
+    <div>
+      <p>Dashboard</p>
+      <p>Employees</p>
+      <p>Reports</p>
+    </div>
   );
 }
 

@@ -1,10 +1,10 @@
 function Sidebar() {
   return (
-    <div>
+    <aside className="sidebar">
       <p>Dashboard</p>
       <p>Employees</p>
       <p>Reports</p>
-    </div>
+    </aside>
   );
 }
 

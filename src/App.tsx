@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar";
 import EmployeeCard from "./components/EmployeeCard";
 import { employeeData } from "./data/employees";
 import type { Employee } from "./types/employee";
+import "./App.css";
 
 function App() {
   const [employees, setEmployees] = useState<Employee[]>([]);
@@ -13,18 +14,20 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="app">
       <Navbar />
 
-      <div>
+      <div className="layout">
         <Sidebar />
 
-        <main>
+        <main className="main-content">
           <h1>Employees</h1>
 
-          {employees.map((employee) => (
-            <EmployeeCard key={employee.id} employee={employee} />
-          ))}
+          <div className="employee-grid">
+            {employees.map((employee) => (
+              <EmployeeCard key={employee.id} employee={employee} />
+            ))}
+          </div>
         </main>
       </div>
     </div>

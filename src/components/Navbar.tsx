@@ -1,5 +1,5 @@
 function Navbar() {
-  return <div>Employee Dashboard</div>;
+  return <nav className="navbar">Employee Dashboard</nav>;
 }
 
 export default Navbar;
